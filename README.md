@@ -2,6 +2,8 @@
 
 A self-hosted, TradingView-style dashboard for charting and backtesting. You can run Pine strategies in it, or open runs from your own backtest engine: the Strategy report then shows the fills on the chart, the strategy's own indicators, drawdown, Sharpe, Greeks and stress tests. It was built during the UTEFA QuantiFi 2026 algorithmic trading competition, so that competition's replay engine is included as the worked example of a custom engine.
 
+![A QuantiFi 2026 replay of trader_options: LYCHEE at tick level with every fill, the book, the strategy's position, RSI, EMA and Bollinger Bands, and the run's key stats in the dock below](dashboard/docs/quantifi_replay.png)
+
 | Folder | What it is |
 |---|---|
 | [`dashboard/`](dashboard) | The app: FastAPI server, TypeScript web UI on lightweight-charts, and a Node sidecar for market data. It has indicators, drawings, alerts, a Pine interpreter with a TradingView-style broker emulator and an Optuna optimiser, and the Strategy report. |
@@ -20,6 +22,8 @@ cd dashboard && ./dev.sh          # open http://127.0.0.1:5173
 ```
 
 To see an engine run in the dashboard: Strategy report → runs → *QuantiFi 2026*, or **New QuantiFi run** to replay a strategy file from `engine/submission/`. The run's fills, quotes and indicators appear on a tick-level chart. The dock shows Key stats, Products, Greeks, and a **Stress** view with sliders.
+
+![The Stress view: push half-life, liquidity share and delay for one slippage scenario](dashboard/docs/quantifi_stress.png)
 
 ## Using your own engine
 

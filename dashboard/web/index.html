@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chart Studio</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22%3E%3Cpath d=%22M1 12l4-5 3 3 6-8%22 stroke=%22%232962ff%22 stroke-width=%222%22 fill=%22none%22/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <div id="app">
+    <header id="topbar"></header>
+    <nav id="drawbar" aria-label="Drawing tools"></nav>
+    <main id="center">
+      <div id="chart-card">
+        <section id="grid" data-grid="1"></section>
+        <footer id="bottombar"></footer>
+      </div>
+      <div id="dock-resizer" hidden></div>
+      <section id="dock" hidden aria-label="Strategy report"></section>
+    </main>
+    <aside id="widgetbar">
+      <div id="widget-pages"></div>
+      <nav id="rightbar" aria-label="Widgets"></nav>
+    </aside>
+  </div>
+  <div id="dialog-root"></div>
+  <div id="popup-root"></div>
+  <div id="toasts"></div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

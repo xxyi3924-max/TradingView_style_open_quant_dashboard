@@ -1,0 +1,11 @@
+re/raw/
+re/traces/**/rea_*.json
+node_modules/
+*.sqlite3
+__pycache__/
+.pytest_cache/
+web/dist/
+web/test-results/
+web/playwright-report/
+server/cache/
+.superpowers/

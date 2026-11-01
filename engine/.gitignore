@@ -1,0 +1,5 @@
+# Market data and replay output stay local
+Data/
+runs/
+__pycache__/
+.pytest_cache/
